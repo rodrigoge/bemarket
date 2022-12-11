@@ -39,7 +39,7 @@ public class Product {
     private BigDecimal price;
 
     @ManyToMany
-    @JoinTable(name = "products_in_markets",
+    @JoinTable(name = "market_product",
             joinColumns = {@JoinColumn(name = "product_id")},
             inverseJoinColumns = {@JoinColumn(name = "market_id")})
     private List<Market> markets;

@@ -24,23 +24,31 @@ INSERT INTO public.product(
 
 INSERT INTO public.product(
 	id, name, price)
-	VALUES (2, 'Pão de Forma Tradicional Visconti Pacote 400g', 5.99);
+	VALUES (2, 'Biscoito Passatempo Pacote 130g', 3.69);
 
 INSERT INTO public.product(
 	id, name, price)
-	VALUES (3, 'Refrigerante Coca-Cola sem Açúcar 350ml', 3.99);
+	VALUES (3, 'Pão de Forma Tradicional Visconti Pacote 400g', 5.99);
 
 INSERT INTO public.product(
 	id, name, price)
-	VALUES (4, 'Arroz Prato Fino Tipo 1 - 5 Kg', 19.89);
+	VALUES (4, 'Refrigerante Coca-Cola sem Açúcar 350ml', 3.99);
 
 INSERT INTO public.product(
 	id, name, price)
-	VALUES (5, 'Arroz Unissul - 5 Kg', 16.89);
+	VALUES (5, 'Arroz Prato Fino Tipo 1 - 5 Kg', 19.89);
 
 INSERT INTO public.product(
 	id, name, price)
-	VALUES (6, 'Café Brasópolis - 1 Kg', 7.99);
+	VALUES (6, 'Arroz Prato Fino Tipo 1 - 5 Kg', 16.39);
+
+INSERT INTO public.product(
+	id, name, price)
+	VALUES (7, 'Arroz Unissul - 5 Kg', 16.89);
+
+INSERT INTO public.product(
+	id, name, price)
+	VALUES (8, 'Café Brasópolis - 1 Kg', 7.99);
 
 INSERT INTO public.market_product(
 	id, market_id, product_id)
@@ -48,7 +56,7 @@ INSERT INTO public.market_product(
 
 INSERT INTO public.market_product(
 	id, market_id, product_id)
-	VALUES (2, 2, 1);
+	VALUES (2, 2, 2);
 
 INSERT INTO public.market_product(
 	id, market_id, product_id)
@@ -56,24 +64,28 @@ INSERT INTO public.market_product(
 
 INSERT INTO public.market_product(
 	id, market_id, product_id)
-	VALUES (4, 5, 6);
+	VALUES (4, 2, 4);
 
 INSERT INTO public.market_product(
 	id, market_id, product_id)
-	VALUES (5, 2, 4);
+	VALUES (5, 5, 6);
 
 INSERT INTO public.market_product(
 	id, market_id, product_id)
-	VALUES (6, 5, 4);
+	VALUES (6, 1, 8);
 
 INSERT INTO public.market_product(
 	id, market_id, product_id)
-	VALUES (7, 1, 2);
+	VALUES (7, 1, 3);
 
 INSERT INTO public.market_product(
 	id, market_id, product_id)
-	VALUES (8, 1, 3);
+	VALUES (8, 1, 6);
 
 INSERT INTO public.market_product(
 	id, market_id, product_id)
-	VALUES (9, 1, 4);
+	VALUES (9, 1, 7);
+
+INSERT INTO public.market_product(
+	id, market_id, product_id)
+	VALUES (10, 4, 8);
